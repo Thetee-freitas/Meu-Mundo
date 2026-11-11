@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escolha seu perfil para acessar o Meu Mundo.">
+  <title>Meu Mundo! | Acesso</title>
+  <link rel="stylesheet" href="perfis.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#" id="inicioLink" aria-label="Meu Mundo - início">
+      <span class="marca-icone">🌈</span>
+      <span>Meu Mundo<span class="ponto">!</span></span>
+    </a>
+    <span class="topo-legenda">Um espaço para cada jeito de aprender e crescer</span>
+  </header>
+
+  <main class="pagina">
+    <section class="boas-vindas" id="boasVindas">
+      <span class="etiqueta">SEJA BEM-VINDO(A) AO SEU ESPAÇO</span>
+      <h1>Qual é o seu mundo?</h1>
+      <p>Escolha como deseja acessar. Cada perfil tem um ambiente pensado para suas necessidades.</p>
+
+      <div class="grade-perfis">
+        <button class="perfil perfil-crianca" data-role="crianca">
+          <span class="perfil-icone">🧸</span>
+          <strong>Criança</strong>
+          <small>Um espaço para brincar e aprender</small>
+          <span class="tipo-acesso">Sem senha</span>
+        </button>
+
+        <button class="perfil perfil-adulto" data-role="adulto">
+          <span class="perfil-icone">🌿</span>
+          <strong>Adulto</strong>
+          <small>Organize sua rotina e seus objetivos</small>
+          <span class="tipo-acesso">Sem senha</span>
+        </button>
+
+        <button class="perfil perfil-responsavel" data-role="responsavel">
+          <span class="perfil-icone">💛</span>
+          <strong>Responsável</strong>
+          <small>Gerencie o perfil e as autorizações da criança</small>
+          <span class="tipo-acesso">E-mail e senha</span>
+        </button>
+
+        <button class="perfil perfil-profissional" data-role="profissional">
+          <span class="perfil-icone">🩺</span>
+          <strong>Profissional</strong>
+          <small>Acompanhe usuários autorizados</small>
+          <span class="tipo-acesso">E-mail e senha</span>
+        </button>
+
+        <button class="perfil perfil-clinica" data-role="clinica">
+          <span class="perfil-icone">🏥</span>
+          <strong>Clínica</strong>
+          <small>Administre profissionais e atendimentos</small>
+          <span class="tipo-acesso">E-mail e senha</span>
+        </button>
+
+        <button class="perfil perfil-root" data-role="root">
+          <span class="perfil-icone">🛡️</span>
+          <strong>Administrador ROOT</strong>
+          <small>Administração geral da plataforma</small>
+          <span class="tipo-acesso">Acesso restrito</span>
+        </button>
+      </div>
+
+      <p class="aviso-demo">Versão demonstrativa: os acessos ainda não validam contas reais.</p>
+    </section>
+
+    <section class="painel-acesso oculto" id="painelAcesso" aria-live="polite">
+      <button class="voltar" id="voltarInicio">← Voltar aos perfis</button>
+      <div id="conteudoAcesso"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    🌈 Meu Mundo! — Cada pessoa tem seu próprio jeito de aprender e crescer.
+  </footer>
+
+  <script src="perfis.js"></script>
+</body>
+</html>
